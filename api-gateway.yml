@@ -27,7 +27,7 @@ spring:
             - name: RequestRateLimiter
               args:
                 redis-rate-limiter.replenishRate: 2     # 2 requests per second
-                redis-rate-limiter.burstCapacity: 4     # max 4 requests at once
+                redis-rate-limiter.burstCapacity: 2     # max 4 requests at once
                 key-resolver: "#{@ipKeyResolver}"
 
 eureka:
